@@ -1,0 +1,88 @@
+/* Базові стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('rez.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+        
+.resume {
+    max-width: 800px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки */
+header h1 {
+    font-size: 2.5rem;
+    color: #0073e6;
+    margin: 0;
+}
+        
+header p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+        
+/* Контактна інформація */
+.contact h2, .personal-data h2, .specialization h2, .experience h2, .education h2 {
+    color: #0073e6;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0073e6;
+}
+        
+.contact p, .personal-data ul, .specialization ul, .experience p, .education p {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+}
+
+/* Списки */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0073e6;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .resume {
+        width: 100%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .contact p, .personal-data ul, .specialization ul {
+        font-size: 1rem;
+    }
+}
